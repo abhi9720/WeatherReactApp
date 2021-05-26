@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Mulish', sans-serif !important;
+}
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.frame {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 360px;
+	height: 450px;
+
+	background-color: #f2f3f7;
+	border-radius: 20px;
+	box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+.time-zone {
+	width: 100%;
+	font-size: 1rem;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(15, 34, 70);
+}
+.time,
+.date {
+	padding: 5px 10px;
+	font-size: 1.5rem;
+	color: red;
+	letter-spacing: 1px;
+}
+
+/* /// front 1 ///////////// */
+.front1 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+	height: 44.444444%;
+	width: 360px;
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+	background-color: rgb(18, 18, 68);
+	background-image: url(./img/raining1.gif);
+}
+
+.front1 input[type='search'] {
+	border-radius: 20px;
+	width: 80%;
+	padding: 10px 15px;
+	font-size: 1.2rem;
+
+	outline: none;
+	border: none;
+}
+
+.front1 .city {
+	font-size: 1.5rem;
+	color: crimson;
+	font-weight: 700px !important;
+}
+
+/* =====================front 2================== */
+.front2 {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 55.5555556%;
+	width: 360px;
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+
+.info {
+	height: 100px;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+}
+
+.temperature span {
+	font-size: 1rem;
+}
+
+.temperature {
+	font-size: 3rem;
+}
+
+.icons {
+	font-size: 1rem;
+}
+.description {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.description span:nth-child(1) {
+	font-size: 20px;
+
+	text-transform: capitalize;
+	padding: 5px 10px;
+}
+.description h1 a {
+	margin: 0px 6px;
+	cursor: pointer;
+}
+.preview td {
+	padding-right: 12px;
+	font-weight: 600;
+}
+
+@media (max-width: 600px) {
+	.frame {
+		height: 80vh;
+		border-radius: 0;
+		box-shadow: none;
+		background-color: aliceblue !important;
+	}
+}
