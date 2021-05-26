@@ -5,12 +5,12 @@ const Tempapp = () => {
 	const [search, setSearch] = useState('mumbai');
 	const inputRef = React.useRef('mumbai');
 	const timeoutId = React.useRef();
-	const [callCount, setCallCount] = React.useState(0);
+
 	const fetchData = async (search) => {
 		const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&APPID=dab8c411bf52c4a07a0a520581866aff`;
 		const response = await fetch(url);
 		const data = await response.json();
-		console.log(data);
+		// console.log(data);
 		await setCity(data);
 	};
 
@@ -89,11 +89,17 @@ const Tempapp = () => {
 								<span> {`${City.weather[0].description}`}</span>
 								<br />
 								<h1 className="repo_link">
-									<a href="">
-										<img src="https://img.icons8.com/material-sharp/24/000000/github.png" />
+									<a href="https://github.com/abhi9720/WeatherReactApp">
+										<img
+											src="https://img.icons8.com/material-sharp/24/000000/github.png"
+											alt="failed to github"
+										/>
 									</a>
-									<a href="https://www.linkedin.com/in/abhishek-tiwari-b86a1a19a/" target="_blank">
-										<img src="https://img.icons8.com/material-sharp/24/000000/linkedin--v2.png" />
+									<a href="https://www.linkedin.com/in/abhishek-tiwari-b86a1a19a/">
+										<img
+											src="https://img.icons8.com/material-sharp/24/000000/linkedin--v2.png"
+											alt="failed to load linkedin"
+										/>
 									</a>
 								</h1>
 							</div>
