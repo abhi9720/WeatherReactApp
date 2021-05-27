@@ -7,7 +7,8 @@ const Tempapp = () => {
 	const timeoutId = React.useRef();
 
 	const fetchData = async (search) => {
-		const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&APPID=dab8c411bf52c4a07a0a520581866aff`;
+		const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&APPID=dab8
+66aff`;
 		const response = await fetch(url);
 		const data = await response.json();
 		// console.log(data);
